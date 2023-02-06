@@ -1,0 +1,12 @@
+name: First Workflow
+# workflow-displatch es un tipo de evento. El "on" es un trigger
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting 
+        run: echo "Hello World!"
+      - name: Pring goodbye
+        run: echo "Done - bye!"
+      
